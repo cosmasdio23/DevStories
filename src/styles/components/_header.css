@@ -1,0 +1,54 @@
+.app-header {
+  background-color: var(--color-primary-light);
+  padding: var(--padding-s) var(--padding-m);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px var(--color-shadow);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.app-header__brand h1 {
+  margin: 0;
+  font-size: var(--font-size-large);
+  color: var(--color-primary-dark);
+}
+
+.app-header__navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.app-header__navigation ul li {
+  margin-left: var(--margin-m);
+}
+
+.app-header__navigation ul li a {
+  color: var(--color-text);
+  font-weight: bold;
+  padding: var(--padding-xs) var(--padding-s);
+  border-radius: var(--border-radius);
+}
+
+.app-header__navigation ul li a:hover,
+.app-header__navigation ul li a:focus,
+.app-header__navigation ul li a.active { /* Untuk menandai link aktif */
+  background-color: var(--color-primary-dark);
+  color: var(--color-text-on-primary);
+  text-decoration: none;
+}
+
+/* Sembunyikan tombol hamburger di desktop */
+.hamburger-button {
+  display: none;
+}
+
+.user-info-container .user-info {
+  padding: var(--padding-xs) var(--padding-s);
+  color: var(--color-text-light); /* Atau warna yang sesuai */
+  font-style: italic;
+}

@@ -1,0 +1,111 @@
+@import './_variables.css';
+@import './components/_story-detail.css';
+
+/* Gaya dasar untuk body dan html */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-primary);
+  font-size: var(--font-size-normal);
+  line-height: 1.6;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-secondary); /* Contoh penggunaan font sekunder */
+  color: var(--color-primary-dark);
+  margin-top: var(--margin-m);
+  margin-bottom: var(--margin-s);
+}
+
+h1 { font-size: var(--font-size-xlarge); }
+h2 { font-size: var(--font-size-large); }
+h3 { font-size: var(--font-size-medium); }
+
+p {
+  margin-bottom: var(--margin-m);
+}
+
+a {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover, a:focus {
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+
+img, video, canvas {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.error-message {
+  color: var(--color-error);
+  font-size: var(--font-size-small);
+}
+
+.success-message {
+  color: var(--color-success);
+}
+
+.message { /* General message styling */
+  margin-top: var(--margin-s);
+  font-size: var(--font-size-small);
+}
+
+#main-content {
+  padding: var(--padding-m);
+  min-height: calc(100vh - 120px - 80px); /* Sesuaikan dengan tinggi header & footer */
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--padding-m);
+}
+
+/* Impor gaya komponen */
+@import './components/_header.css';
+@import './components/_footer.css';
+@import './components/_buttons.css';
+@import './components/_form.css';
+@import './components/_story-item.css';
+@import './components/_map.css';
+@import './components/_loader.css';
+@import './components/_notifications.css';
+@import './components/_skip-link.css';
+
+/* Impor gaya transisi dan animasi */
+@import './transitions.css';
+@import './animations.css';
+
+.empty-message {
+  text-align: center;
+  padding: var(--padding-xl);
+  color: var(--color-text-light);
+}
+
+.skip-link {
+  position: absolute;
+  top: -100px; /* Atau -999px, atau transform: translateY(-100%) */
+  left: 0;
+}
+.skip-link:focus {
+  top: 0;
+}

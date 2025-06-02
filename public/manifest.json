@@ -1,0 +1,56 @@
+{
+  "name": "DevStoryApp by Cosmas",
+  "short_name": "DevStoryApp",
+  "description": "Aplikasi web progresif untuk berbagi cerita dan pengalaman antar developer.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#A0D2EB",
+  "theme_color": "#4A55A2",
+  "icons": [
+    {
+      "src": "/assets/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Tambah Cerita Baru",
+      "short_name": "Tambah Cerita",
+      "description": "Bagikan cerita atau pengalaman baru Anda.",
+      "url": "/index.html#/add-story",
+      "icons": [
+        {
+          "src": "/assets/icons/add-stories.png",
+          "sizes": "96x96",
+          "type": "image/png",
+          "purpose": "any"
+        }
+      ]
+    }
+  ],
+
+  "screenshots": [
+    {
+      "src": "/assets/icons/images/screenshots/Screenshot-desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Tampilan Desktop DevStoryShare"
+    },
+    {
+      "src": "/assets/icons/images/screenshots/Screenshot-mobile.png",
+      "sizes": "720x1280",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Tampilan Mobile DevStoryShare"
+    }
+  ]
+}

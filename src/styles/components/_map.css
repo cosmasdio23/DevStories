@@ -1,0 +1,43 @@
+/* Styling umum untuk kontainer peta */
+.map-container, #map-picker, .story-item__map, .story__map-detail {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+  background-color: #f0f0f0; /* Placeholder jika peta lama dimuat */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--color-text-light);
+}
+
+/* Styling spesifik untuk Leaflet (jika menggunakan Leaflet) */
+.leaflet-container {
+  border-radius: var(--border-radius);
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+  background: var(--color-surface);
+  color: var(--color-text);
+  box-shadow: var(--box-shadow);
+}
+
+.leaflet-popup-content b {
+  color: var(--color-primary-dark);
+}
+
+/* Styling untuk layer control Leaflet */
+.leaflet-control-layers {
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+.leaflet-control-layers-toggle {
+  width: 30px !important;
+  height: 30px !important;
+  background-image: url('https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/layers.png') !important; /* Kriteria 7: ikon */
+  background-size: 20px 20px !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+.leaflet-control-layers-expanded {
+  padding: var(--padding-s);
+}

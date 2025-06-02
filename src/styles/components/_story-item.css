@@ -1,0 +1,75 @@
+.stories-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--padding-m);
+}
+
+.story-item {
+  background-color: var(--color-surface);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  overflow: hidden; /* Agar border-radius bekerja pada gambar */
+  display: flex;
+  flex-direction: column; /* Default untuk stacking */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.story-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px var(--color-shadow);
+}
+
+.story-item__thumbnail {
+  width: 100%;
+  height: 200px; /* Atau aspect-ratio jika didukung */
+  object-fit: cover; /* Memastikan gambar mengisi area tanpa distorsi */
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* Lazyload placeholder styling */
+.lazyload {
+  background-color: #eee; /* Placeholder color */
+}
+.lazyload:not([src]) { /* Style saat src belum di-load (jika menggunakan data-src) */
+  visibility: hidden; /* Atau gunakan background image placeholder */
+}
+
+
+.story-item__content {
+  padding: var(--padding-m);
+}
+
+.story-item__title {
+  font-size: var(--font-size-medium);
+  margin-top: 0;
+  margin-bottom: var(--margin-xs);
+}
+
+.story-item__title a {
+  color: var(--color-primary-dark);
+}
+.story-item__title a:hover {
+  color: var(--color-secondary);
+}
+
+.story-item__date {
+  font-size: var(--font-size-small);
+  color: var(--color-text-light);
+  margin-bottom: var(--margin-s);
+}
+
+.story-item__description {
+  font-size: var(--font-size-normal);
+  margin-bottom: var(--margin-s);
+  /* Batasi jumlah baris jika terlalu panjang */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.story-item__map {
+  margin-top: var(--margin-s);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+}

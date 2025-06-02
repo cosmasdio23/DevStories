@@ -1,0 +1,32 @@
+.notification {
+  position: fixed;
+  bottom: 20px; /* Akan dianimasikan ke 30px */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: var(--padding-s) var(--padding-m);
+  border-radius: var(--border-radius);
+  color: white; /* Default, akan ditimpa oleh JS helper */
+  z-index: 1000;
+  box-shadow: var(--box-shadow);
+  font-size: var(--font-size-normal);
+  opacity: 0; /* Awalnya transparan */
+  transition: opacity 0.4s ease-in-out, bottom 0.4s ease-in-out;
+  min-width: 250px;
+  text-align: center;
+}
+
+.notification--success {
+  background-color: var(--color-success);
+}
+
+.notification--error {
+  background-color: var(--color-error);
+}
+
+.notification--info {
+  background-color: var(--color-info);
+}
+
+.notification--warning {
+  background-color: var(--color-warning);
+}

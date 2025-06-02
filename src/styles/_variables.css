@@ -1,0 +1,54 @@
+:root {
+  /* Pakai Warna dasar biru pastel */
+  --color-primary: #A0D2DB; /* Biru Pastel Muda */
+  --color-primary-dark: #7FA9B8; /* Biru Pastel Sedang */
+  --color-primary-light: #C8E0E5; /* Biru Pastel Sangat Muda */
+
+  --color-secondary: #E5B8A0; /* Oranye Pastel sebagai aksen */
+  --color-secondary-dark: #D4A088;
+
+  --color-accent: #D1A0E5; /* Ungu Pastel sebagai aksen lain */
+
+  --color-background: #F0F4F8; /* Latar belakang netral terang */
+  --color-surface: #FFFFFF; /* Permukaan kartu, modal, dll. */
+
+  --color-text: #333333; /* Teks utama */
+  --color-text-light: #555555; /* Teks sekunder */
+  --color-text-on-primary: #FFFFFF; /* Teks di atas warna primer */
+  --color-text-on-secondary: #FFFFFF; /* Teks di atas warna sekunder */
+
+  --color-success: #4CAF50;
+  --color-error: #f44336;
+  --color-info: #2196F3;
+  --color-warning: #ff9800;
+
+  --color-border: #DDDDDD;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+
+  /* Gaya font yang mudah dibaca */
+  --font-primary: 'Arial', sans-serif;
+  --font-secondary: 'Georgia', serif;
+
+  --font-size-small: 0.875rem;  /* 14px */
+  --font-size-normal: 1rem;     /* 16px */
+  --font-size-medium: 1.125rem; /* 18px */
+  --font-size-large: 1.5rem;    /* 24px */
+  --font-size-xlarge: 2rem;     /* 32px */
+
+  /* padding dan margin yang pas */
+  --spacing-unit: 8px;
+  --padding-xs: calc(var(--spacing-unit) * 0.5);  /* 4px */
+  --padding-s: var(--spacing-unit);             /* 8px */
+  --padding-m: calc(var(--spacing-unit) * 2);   /* 16px */
+  --padding-l: calc(var(--spacing-unit) * 3);   /* 24px */
+  --padding-xl: calc(var(--spacing-unit) * 4);  /* 32px */
+
+  --margin-xs: calc(var(--spacing-unit) * 0.5);
+  --margin-s: var(--spacing-unit);
+  --margin-m: calc(var(--spacing-unit) * 2);
+  --margin-l: calc(var(--spacing-unit) * 3);
+  --margin-xl: calc(var(--spacing-unit) * 4);
+
+  --border-radius: 4px;
+  --box-shadow: 0 2px 4px var(--color-shadow);
+}

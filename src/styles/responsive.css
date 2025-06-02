@@ -1,0 +1,110 @@
+/* Responsive Design by Cosmas */
+
+/* Untuk tablet dan perangkat yang lebih kecil */
+@media (max-width: 768px) {
+  :root {
+    --font-size-normal: 0.9375rem; /* 15px */
+    --padding-m: calc(var(--spacing-unit) * 1.5); /* 12px */
+  }
+
+  .container {
+    width: 95%;
+    padding: var(--padding-s);
+  }
+
+  #main-content {
+    padding: var(--padding-s);
+  }
+
+  /* Contoh penyesuaian header untuk mobile */
+  .app-header__brand h1 {
+    font-size: var(--font-size-large);
+  }
+
+  .app-header__navigation {
+    /* Sembunyikan navigasi default, siapkan untuk menu hamburger */
+    /* display: none; */
+    /* Atau buat menjadi flex-column */
+    position: absolute;
+    top: 60px; /* Sesuaikan dengan tinggi header */
+    left: -100%; /* Sembunyikan di luar layar */
+    width: 80%;
+    max-width: 300px;
+    height: calc(100vh - 60px);
+    background-color: var(--color-surface);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--padding-m);
+    box-shadow: var(--box-shadow);
+    transition: left 0.3s ease-in-out;
+  }
+
+  .app-header__navigation.open {
+    left: 0; /* Tampilkan menu */
+  }
+
+  .app-header__navigation ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .app-header__navigation ul li {
+    margin: var(--margin-s) 0;
+    width: 100%;
+  }
+
+  .app-header__navigation ul li a {
+    display: block;
+    padding: var(--padding-s);
+  }
+
+  /* Tombol hamburger (perlu ditambahkan di HTML atau via JS) */
+  .hamburger-button {
+    display: block; /* Tampilkan tombol hamburger */
+    /* Styling untuk tombol hamburger */
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: var(--color-primary-dark);
+    cursor: pointer;
+    padding: var(--padding-s);
+  }
+
+  .stories-list {
+    grid-template-columns: 1fr; /* Ubah menjadi 1 kolom untuk mobile */
+  }
+
+  .story-item {
+    flex-direction: column;
+  }
+  .story-item__thumbnail {
+    width: 100%;
+    height: 200px; /* Sesuaikan */
+    margin-right: 0;
+    margin-bottom: var(--margin-m);
+  }
+}
+
+/* Untuk ponsel */
+@media (max-width: 480px) {
+  :root {
+    --font-size-normal: 0.875rem; /* 14px */
+  }
+
+  .app-header {
+    padding: var(--padding-s);
+  }
+  .app-header__brand h1 {
+    font-size: calc(var(--font-size-large) * 0.8);
+  }
+
+  .button {
+    padding: var(--padding-s) var(--padding-m);
+    font-size: var(--font-size-small);
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: var(--font-size-normal);
+  }
+}

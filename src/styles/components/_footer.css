@@ -1,0 +1,12 @@
+.app-footer {
+  background-color: var(--color-primary-dark);
+  color: var(--color-text-on-primary);
+  text-align: center;
+  padding: var(--padding-m);
+  margin-top: var(--margin-xl); /* Beri jarak dari konten terakhir */
+}
+
+.app-footer p {
+  margin: 0;
+  font-size: var(--font-size-small);
+}

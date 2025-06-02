@@ -1,0 +1,15 @@
+.skip-link {
+  position: absolute;
+  top: -100px; /* Sembunyikan di luar layar */
+  left: 0;
+  background-color: var(--color-primary-dark);
+  color: var(--color-text-on-primary);
+  padding: var(--padding-s);
+  z-index: 9999; /* Paling atas */
+  text-decoration: none;
+  transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+  top: 0; /* Tampilkan saat fokus */
+}

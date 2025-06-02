@@ -1,0 +1,18 @@
+====================================================================================
+INFORMASI API KEY LAYANAN PETA (MAP SERVICE API KEY INFORMATION)
+====================================================================================
+
+Proyek ini menggunakan map-helper.js
+
+OpenStreetMap (OSM):
+URL Tile: https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png
+API Key: OPEN SOURCE
+
+Stadia Maps DARK MODE:
+URL Tile: https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png
+API KEY: FREE OPEN
+
+API PUSH Notification
+VAPID public keys: BCCs2eonMI-6H2ctvFaWg-UYdDv387Vno_bzUzALpB442r2lCnsHmtrx8biyPi_E-1fSGABK_Qs_GlvPoJJqxbk
+
+

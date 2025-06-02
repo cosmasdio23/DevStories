@@ -1,0 +1,54 @@
+<!-- Aplikasi Berbagi Cerita Developer -->
+<!-- DevStories App -->
+<!-- Cosmas Sakristiandio - cosmasdio23@gmail.com -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- ini membatasi agar menurunkan level security, namun bisa terkena injection dgn mudah, solved
+  dengan yang lain dulu.
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self';
+               script-src 'self' 'unsafe-eval' https://cdnjs.cloudflare.com;
+               style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com;
+               font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com;
+               img-src 'self' data: https://story-api.dicoding.dev;"> -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Starter project untuk aplikasi web modern.">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#A0D2DB"/>
+  <title>DevStories App</title>
+  <link rel="icon" type="image/png" href="/assets/icons/icon-512x512.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <a href="#main-content" class="skip-link">skip to content</a>
+</head>
+<body>
+<header class="app-header">
+  <div class="app-header__brand">
+    <h1><a href="#/">DevStories App</a></h1> </div>
+
+  <button class="hamburger-button" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="main-navigation">
+    <i class="fas fa-bars" aria-hidden="true"></i>
+  </button>
+
+  <nav class="app-header__navigation" id="main-navigation" aria-label="Menu Utama">
+    <ul>
+      <li><a href="#/" id="home-link">Home</a></li>
+      <li><a href="#/feed">Stories Feed</a></li>
+      <li><a href="#/add-story">Add Stories</a></li>
+      <li><a href="#/login" id="auth-link">Login</a></li> </ul>
+  </nav>
+</header>
+
+<main id="main-content" tabindex="-1">
+  <p>Content Loading. . . .</p>
+</main>
+
+<footer class="app-footer">
+  <p>&copy; 2025 - Cosmas Sakristiandio</p>
+  <p>&hearts; Full Stack Developer</p>
+</footer>
+
+</body>
+</html>

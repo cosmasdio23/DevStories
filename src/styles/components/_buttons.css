@@ -80,3 +80,61 @@
 .button-fab:hover, .button-fab:focus {
   background-color: var(--color-secondary-dark);
 }
+
+/* Anda mungkin sudah punya rule .button dasar, kita akan tambahkan styling untuk yang spesifik */
+
+/* Styling Umum untuk Tombol Aksi */
+.story-item__actions .button {
+  display: inline-flex; /* Agar ikon dan teks bisa diatur posisinya */
+  align-items: center;  /* Posisikan ikon dan teks di tengah secara vertikal */
+  justify-content: center; /* Posisikan di tengah secara horizontal */
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  color: white;
+}
+
+.story-item__actions .button:hover {
+  opacity: 0.9;
+}
+
+.story-item__actions .button:active {
+  transform: scale(0.98); /* Efek saat tombol ditekan */
+}
+
+/* Ikon di dalam tombol */
+.story-item__actions .button i {
+  margin-right: 8px; /* Beri jarak antara ikon dan teks */
+}
+
+/* Tombol Simpan */
+.button-save-offline {
+  background-color: #3498db; /* Warna biru yang bagus */
+}
+
+.button-save-offline:hover {
+  background-color: #2980b9; /* Warna biru lebih gelap saat hover */
+}
+
+/* Tombol Hapus */
+.button-delete-offline {
+  background-color: #e74c3c; /* Warna merah untuk aksi destruktif */
+}
+
+.button-delete-offline:hover {
+  background-color: #c0392b; /* Warna merah lebih gelap saat hover */
+}
+
+/* Tambahan: Styling untuk kontainer tombol agar rapi */
+.story-item__actions {
+  display: flex;
+  justify-content: flex-end; /* Posisikan tombol ke kanan */
+  gap: 10px; /* Beri jarak antar tombol jika ada lebih dari satu */
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee; /* Beri garis pemisah (opsional) */
+}

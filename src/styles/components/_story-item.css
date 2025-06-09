@@ -73,3 +73,41 @@
   border-radius: var(--border-radius);
   border: 1px solid var(--color-border);
 }
+
+/* Update Versi 3: Cosmas 9 June */
+
+.story-item {
+  /* Jadikan kartu sebagai kontainer flexbox dengan arah kolom */
+  display: flex;
+  flex-direction: column;
+
+  /* Pastikan ada tinggi minimum jika perlu, atau biarkan konten menentukan tinggi */
+  /* height: 100%; akan bekerja baik jika parent-nya adalah grid */
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden; /* Untuk menjaga border-radius pada gambar */
+}
+
+.story-item__content {
+  padding: 1rem; /* Pindahkan padding ke sini agar lebih konsisten */
+  /* Perintahkan bagian konten ini untuk tumbuh dan mengisi ruang kosong yang tersedia */
+  flex-grow: 1;
+}
+
+.story-item__actions {
+  /* Area tombol ini sekarang akan selalu 'terdorong' ke bawah */
+  display: flex;
+  justify-content: flex-end; /* Posisikan tombol ke kanan */
+  gap: 10px;
+  padding: 0 1rem 1rem 1rem; /* Beri padding di sekitar tombol */
+  border-top: 1px solid #f0f0f0; /* Garis pemisah tipis (opsional) */
+  /* Beri tinggi minimum agar kartu tanpa tombol tidak 'kolaps' */
+  min-height: 58px; /* Sesuaikan nilai ini dengan tinggi tombol + padding Anda */
+  align-items: center; /* Posisikan tombol di tengah secara vertikal di dalam area aksi */
+}
+
+/* Sedikit penyesuaian untuk tombol agar lebih pas di dalam actions */
+.story-item__actions .button {
+  margin: 0; /* Hapus margin default jika ada */
+}

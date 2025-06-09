@@ -1,20 +1,40 @@
 import '../../globals/config';
-const createStoryItemTemplate = (story) => `
-  <article class="story-item">
-    <img class="story-item__thumbnail lazyload"
-         data-src="${story.photoUrl}"
-         alt="Foto cerita oleh ${story.name}"
-         crossorigin="anonymous">
-    <div class="story-item__content">
-      <h3 class="story-item__title"><a href="#/story/${story.id}">${story.name}</a></h3>
-      <p class="story-item__date">${new Date(story.createdAt).toLocaleDateString('id-ID', {
-  year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit'
-})}</p>
-      <p class="story-item__description">${story.description.substring(0, 150)}...</p>
-      ${story.lat && story.lon ? `<div id="map-${story.id}" class="story-item__map" style="height: 150px;">Memuat peta...</div>` : ''}
-    </div>
-  </article>
-`;
+const createStoryItemTemplate = (story) => {
+  // Logika dinamis untuk membuat tombol 'Delete' atau 'Save'
+  const saveOrDeleteButton = story.isSaved
+    ? `<button
+         class="button button-delete-offline"
+         data-story-id="${story.id}"
+         aria-label="Remove story named ${story.name || 'this'} from offline storage">
+         <i class="fas fa-trash-alt" aria-hidden="true"></i> Delete
+       </button>`
+    : `<button
+         class="button button-save-offline"
+         data-story-id="${story.id}"
+         aria-label="Save story named ${story.name || 'this'} for offline reading">
+         <i class="fas fa-bookmark" aria-hidden="true"></i> Save
+       </button>`;
+
+  return `
+    <article class="story-item" id="story-${story.id}">
+      <img class="story-item__thumbnail lazyload"
+           data-src="${story.photoUrl}"
+           alt="Foto cerita oleh ${story.name}"
+           crossorigin="anonymous">
+      <div class="story-item__content">
+        <h3 class="story-item__title"><a href="#/story/${story.id}">${story.name}</a></h3>
+        <p class="story-item__date">${new Date(story.createdAt).toLocaleDateString('id-ID', {
+    year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit'
+  })}</p>
+        <p class="story-item__description">${story.description.substring(0, 150)}...</p>
+        ${story.lat && story.lon ? `<div id="map-${story.id}" class="story-item__map" style="height: 150px;">Memuat peta...</div>` : ''}
+      </div>
+      <div class="story-item__actions">
+        ${saveOrDeleteButton}
+      </div>
+    </article>
+  `;
+};
 
 // Fungsi untuk detail cerita
 const createStoryDetailTemplate = (story) => `

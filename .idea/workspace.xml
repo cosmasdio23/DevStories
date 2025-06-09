@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bdb6e77b-f25d-47fb-b710-ede90a8c9042" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/scripts/presenters/saved-stories-presenter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scripts/views/pages/saved-stories-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/presenters/feed-presenter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/presenters/feed-presenter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/routes/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/routes/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/views/pages/feed-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/views/pages/feed-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/views/templates/template-creator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/views/templates/template-creator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/components/_buttons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/_buttons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/components/_story-item.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/_story-item.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="tsconfig.json" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/scripts/utils/PushSubscriptionHelper.js" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2xqrUh5cWaHFa5XT01VSx7qUI3W" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Node.js.PushSubscriptionHelper.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/cosmas/Documents/starter-project&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;GitIgnore&quot;,
+      &quot;TEXT&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-WS-251.25410.117" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bdb6e77b-f25d-47fb-b710-ede90a8c9042" name="Changes" comment="" />
+      <created>1748676464686</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748676464686</updated>
+      <workItem from="1748676464862" duration="8847000" />
+      <workItem from="1748827598193" duration="13922000" />
+      <workItem from="1748851874477" duration="678000" />
+      <workItem from="1748852559332" duration="4838000" />
+      <workItem from="1748863175535" duration="500000" />
+      <workItem from="1749393281958" duration="129000" />
+      <workItem from="1749393441663" duration="53000" />
+      <workItem from="1749393508877" duration="23000" />
+      <workItem from="1749393585812" duration="186000" />
+      <workItem from="1749438744492" duration="315000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
